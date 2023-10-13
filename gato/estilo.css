@@ -1,0 +1,71 @@
+body{
+    border: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(50% 100%, #bfbfbf 2%, #2453fd 100%);
+}
+.titulo{
+    position: absolute;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    top :20px;
+    text-align: center;
+
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+}
+  
+.cuadro {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro.x::before {
+    content: 'X';
+    font-size: 36px;
+    color: red; /* Cambia el color según tus preferencias */
+}
+  
+  /* Estilo personalizado para 'O' */
+  .cuadro.o::before {
+    content: 'O';
+    font-size: 36px;
+    color: blue; /* Cambia el color según tus preferencias */
+}
+  
+.cuadro:hover {
+    background:#504af7;
+}
+  
+#grupo1, #grupo3, #g1, #g2, #g4, #g5, #g7, #g8 {
+    border: solid white;
+}
+  
+#grupo1 {
+    border-width: 0 12px 0 0;
+}
+  
+#grupo3 {
+    border-width: 0 0 0 12px;
+}
+  
+#grupo1 #g1, #grupo1 #g2, #grupo2 #g4, #grupo2 #g5, #grupo3 #g7, #grupo3 #g8 {
+    border-width: 0 0 12px 0  
+}
+  
+.ion-close {
+    color: #FF6600;
+} 
